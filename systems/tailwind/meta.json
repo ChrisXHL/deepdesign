@@ -1,0 +1,29 @@
+{
+  "id": "tailwind",
+  "name": "Tailwind CSS",
+  "org": "Tailwind Labs",
+  "tagline": "工具优先的实用主义",
+  "desc": "深色画布上高对比代码块，青蓝渐变点缀，JetBrains Mono 等宽字体的纯粹。设计不靠美学宣言而靠实用主义——每个 class 都是一块彩色积木。",
+  "accent": "#38BDF8",
+  "gradient": "linear-gradient(135deg,#0B1121 0%,#0F172A 100%)",
+  "swatches": [
+    "#38BDF8",
+    "#0B1121",
+    "#ffffff",
+    "#475569"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://tailwindcss.com/",
+  "preview": "./outputs/preview-tailwind.png",
+  "tags": [
+    "暗色",
+    "科技"
+  ],
+  "category": "科技"
+}

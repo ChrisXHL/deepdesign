@@ -1,0 +1,29 @@
+{
+  "id": "airbnb",
+  "name": "Airbnb",
+  "org": "Airbnb",
+  "tagline": "摄影驱动的温暖旅行美学",
+  "desc": "大面积摄影作为主视觉，Cereal 字体的优雅衬线，暖粉渐变作为品牌签名，搜索框居中设计暗示「出发」的冲动。产品即内容。",
+  "accent": "#FF385C",
+  "gradient": "linear-gradient(135deg,#FF385C 0%,#E31C5F 100%)",
+  "swatches": [
+    "#FF385C",
+    "#ffffff",
+    "#222222",
+    "#DDDDDD"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://www.airbnb.com/",
+  "preview": "./outputs/preview-airbnb.png",
+  "tags": [
+    "暖色",
+    "消费"
+  ],
+  "category": "消费"
+}

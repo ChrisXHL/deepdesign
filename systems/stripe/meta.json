@@ -1,0 +1,30 @@
+{
+  "id": "stripe",
+  "name": "Stripe",
+  "org": "Stripe",
+  "tagline": "深蓝渐变下的支付美学",
+  "desc": "靛蓝到紫罗兰的流体渐变，Inter 字体严整清晰，磨砂玻璃卡片在暗色画布上悬浮，将金融工具的冰冷转化为科技的温度。",
+  "accent": "#635BFF",
+  "gradient": "linear-gradient(135deg,#635BFF 0%,#a259ff 100%)",
+  "swatches": [
+    "#635BFF",
+    "#0A2540",
+    "#ffffff",
+    "#425466"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://stripe.com/",
+  "preview": "./outputs/preview-stripe.png",
+  "tags": [
+    "暗色",
+    "高端",
+    "科技"
+  ],
+  "category": "科技"
+}

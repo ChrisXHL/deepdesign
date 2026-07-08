@@ -1,0 +1,30 @@
+{
+  "id": "linear",
+  "name": "Linear",
+  "org": "Linear",
+  "tagline": "午夜精密仪表",
+  "desc": "深黑画布上悬浮着发丝边框面板，淡紫和青色微光点缀，SF Mono 等宽字体读取数据如同精密仪器。设计服务于速度，每一像素都有目的。",
+  "accent": "#5E6AD2",
+  "gradient": "linear-gradient(135deg,#1F2023 0%,#16171A 100%)",
+  "swatches": [
+    "#5E6AD2",
+    "#1F2023",
+    "#ffffff",
+    "#828282"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://linear.app/",
+  "preview": "./outputs/preview-linear.png",
+  "tags": [
+    "暗色",
+    "极简",
+    "科技"
+  ],
+  "category": "科技"
+}

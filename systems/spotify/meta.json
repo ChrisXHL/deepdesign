@@ -1,0 +1,29 @@
+{
+  "id": "spotify",
+  "name": "Spotify",
+  "org": "Spotify",
+  "tagline": "暗夜中的绿色音符",
+  "desc": "纯黑背景上跳动着标志性 Spotify 绿，Circular 字体的圆润几何感，卡片封面即内容，渐隐导航栏让音乐成为绝对主角。",
+  "accent": "#1ED760",
+  "gradient": "linear-gradient(135deg,#121212 0%,#181818 100%)",
+  "swatches": [
+    "#1ED760",
+    "#121212",
+    "#ffffff",
+    "#535353"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://www.spotify.com/",
+  "preview": "./outputs/preview-spotify.png",
+  "tags": [
+    "暗色",
+    "消费"
+  ],
+  "category": "消费"
+}

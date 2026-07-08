@@ -1,0 +1,30 @@
+{
+  "id": "figma",
+  "name": "Figma",
+  "org": "Figma",
+  "tagline": "多彩创意工坊",
+  "desc": "暗色画布上跳动着霓虹渐变——橙到紫、蓝到青。圆角无处不在，插画风格图标，字体从 Inter 到 Whyte Ink 大胆混排。设计工具该有的样子。",
+  "accent": "#0d99ff",
+  "gradient": "linear-gradient(135deg,#9747FF 0%,#0D99FF 100%)",
+  "swatches": [
+    "#0d99ff",
+    "#9747FF",
+    "#1e1e1e",
+    "#FFC700"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://www.figma.com/",
+  "preview": "./outputs/preview-figma.png",
+  "tags": [
+    "暗色",
+    "多彩",
+    "科技"
+  ],
+  "category": "科技"
+}

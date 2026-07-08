@@ -1,0 +1,30 @@
+{
+  "id": "codex",
+  "name": "Codex",
+  "org": "OpenAI",
+  "tagline": "高对比极简主义",
+  "desc": "黑白画布上仅以一个实色 CTA 作为标点。纯粹的对比，零装饰，零阴影。",
+  "accent": "#000000",
+  "cover": "#02093a",
+  "gradient": "linear-gradient(135deg,#000000 0%,#1a1a1a 100%)",
+  "swatches": [
+    "#000000",
+    "#ffffff",
+    "#10A37F",
+    "#6E6E6E"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://chatgpt.com/zh-Hans-CN/codex/",
+  "preview": "./outputs/preview-codex.png",
+  "tags": [
+    "极简",
+    "科技"
+  ],
+  "category": "科技"
+}

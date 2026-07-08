@@ -1,0 +1,30 @@
+{
+  "id": "notion-style",
+  "name": "Notion",
+  "org": "Notion",
+  "tagline": "暖纸上的工作台",
+  "desc": "奶白画布、发丝边框、单一蓝色强调，SF Pro 排版的克制与 Source Serif 的编辑感混排。像在纸上工作，而不是在软件里。",
+  "accent": "#0075de",
+  "gradient": "linear-gradient(135deg,#f6f5f4 0%,#edecea 100%)",
+  "swatches": [
+    "#0075de",
+    "#f6f5f4",
+    "#37352f",
+    "#e1dfdd"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://www.notion.so/",
+  "preview": "./outputs/preview-notion-style.png",
+  "tags": [
+    "极简",
+    "暖色",
+    "科技"
+  ],
+  "category": "科技"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "vercel",
+  "name": "Vercel",
+  "org": "Vercel",
+  "tagline": "暗夜几何开发者平台",
+  "desc": "纯黑画布上的几何渐变光晕，Geist 字体家族贯穿始终，命令行美学的卡片网格排列。为开发者而生，视觉本身即是技术宣言。",
+  "accent": "#ffffff",
+  "gradient": "linear-gradient(135deg,#000000 0%,#111111 100%)",
+  "swatches": [
+    "#ffffff",
+    "#000000",
+    "#666666",
+    "#0070f3"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://vercel.com/",
+  "preview": "./outputs/preview-vercel.png",
+  "tags": [
+    "暗色",
+    "科技"
+  ],
+  "category": "科技"
+}

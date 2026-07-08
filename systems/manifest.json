@@ -1,0 +1,242 @@
+[
+  {
+    "id": "codex",
+    "name": "Codex",
+    "org": "OpenAI",
+    "tagline": "高对比极简主义",
+    "desc": "黑白画布上仅以一个实色 CTA 作为标点。纯粹的对比，零装饰，零阴影。",
+    "accent": "#000000",
+    "gradient": "linear-gradient(135deg,#000000 0%,#1a1a1a 100%)",
+    "swatches": [
+      "#000000",
+      "#ffffff",
+      "#10A37F",
+      "#6E6E6E"
+    ],
+    "preview": "./outputs/preview-codex.png",
+    "tags": [
+      "极简"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "org": "Apple Inc.",
+    "tagline": "克制的留白",
+    "desc": "近白画布配单一蓝色强调。SF Pro 低语感，980px 药丸圆角，刻意回避阴影。",
+    "accent": "#0071e3",
+    "gradient": "linear-gradient(135deg,#0071e3 0%,#2997ff 100%)",
+    "swatches": [
+      "#0071e3",
+      "#f5f5f7",
+      "#1d1d1f",
+      "#e2e2e5"
+    ],
+    "preview": "./outputs/preview-apple.png",
+    "tags": [
+      "极简"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "org": "Stripe",
+    "tagline": "深蓝渐变下的支付美学",
+    "desc": "靛蓝到紫罗兰的流体渐变，Inter 字体严整清晰，磨砂玻璃卡片在暗色画布上悬浮。",
+    "accent": "#635BFF",
+    "gradient": "linear-gradient(135deg,#635BFF 0%,#a259ff 100%)",
+    "swatches": [
+      "#635BFF",
+      "#0A2540",
+      "#ffffff",
+      "#425466"
+    ],
+    "preview": "./outputs/preview-stripe.png",
+    "tags": [
+      "高端"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "org": "Linear",
+    "tagline": "午夜精密仪表",
+    "desc": "深黑画布上悬浮着发丝边框面板，淡紫和青色微光点缀，SF Mono 等宽字体读取数据如同精密仪器。",
+    "accent": "#5E6AD2",
+    "gradient": "linear-gradient(135deg,#1F2023 0%,#16171A 100%)",
+    "swatches": [
+      "#5E6AD2",
+      "#1F2023",
+      "#ffffff",
+      "#828282"
+    ],
+    "preview": "./outputs/preview-linear.png",
+    "tags": [
+      "暗色"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "notion-style",
+    "name": "Notion",
+    "org": "Notion",
+    "tagline": "暖纸上的工作台",
+    "desc": "奶白画布、发丝边框、单一蓝色强调，SF Pro 排版的克制与 Source Serif 的编辑感混排。",
+    "accent": "#0075de",
+    "gradient": "linear-gradient(135deg,#f6f5f4 0%,#edecea 100%)",
+    "swatches": [
+      "#0075de",
+      "#f6f5f4",
+      "#37352f",
+      "#e1dfdd"
+    ],
+    "preview": "./outputs/preview-notion-style.png",
+    "tags": [
+      "极简"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "org": "Vercel",
+    "tagline": "暗夜几何开发者平台",
+    "desc": "纯黑画布上的几何渐变光晕，Geist 字体家族贯穿始终，命令行美学的卡片网格排列。",
+    "accent": "#ffffff",
+    "gradient": "linear-gradient(135deg,#000000 0%,#111111 100%)",
+    "swatches": [
+      "#ffffff",
+      "#000000",
+      "#666666",
+      "#0070f3"
+    ],
+    "preview": "./outputs/preview-vercel.png",
+    "tags": [
+      "科技"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "org": "Figma",
+    "tagline": "多彩创意工坊",
+    "desc": "暗色画布上跳动着霓虹渐变，圆角无处不在，插画风格图标，字体从 Inter 到 Whyte Ink 大胆混排。",
+    "accent": "#0d99ff",
+    "gradient": "linear-gradient(135deg,#9747FF 0%,#0D99FF 100%)",
+    "swatches": [
+      "#0d99ff",
+      "#9747FF",
+      "#1e1e1e",
+      "#FFC700"
+    ],
+    "preview": "./outputs/preview-figma.png",
+    "tags": [
+      "多彩"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "org": "GitHub",
+    "tagline": "开发者画布的暗色秩序",
+    "desc": "深色模式下的代码仓库美学，Mona Sans 字体阅读感极佳，绿色点缀作为唯一强调色。",
+    "accent": "#2da44e",
+    "gradient": "linear-gradient(135deg,#0d1117 0%,#161b22 100%)",
+    "swatches": [
+      "#2da44e",
+      "#0d1117",
+      "#f0f6fc",
+      "#30363d"
+    ],
+    "preview": "./outputs/preview-github.png",
+    "tags": [
+      "科技"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "airbnb",
+    "name": "Airbnb",
+    "org": "Airbnb",
+    "tagline": "摄影驱动的温暖旅行美学",
+    "desc": "大面积摄影作为主视觉，Cereal 字体的优雅衬线，暖粉渐变作为品牌签名，搜索框居中设计暗示出发。",
+    "accent": "#FF385C",
+    "gradient": "linear-gradient(135deg,#FF385C 0%,#E31C5F 100%)",
+    "swatches": [
+      "#FF385C",
+      "#ffffff",
+      "#222222",
+      "#DDDDDD"
+    ],
+    "preview": "./outputs/preview-airbnb.png",
+    "tags": [
+      "暖色"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "org": "Spotify",
+    "tagline": "暗夜中的绿色音符",
+    "desc": "纯黑背景上跳动着标志性 Spotify 绿，Circular 字体的圆润几何感，卡片封面即内容。",
+    "accent": "#1ED760",
+    "gradient": "linear-gradient(135deg,#121212 0%,#181818 100%)",
+    "swatches": [
+      "#1ED760",
+      "#121212",
+      "#ffffff",
+      "#535353"
+    ],
+    "preview": "./outputs/preview-spotify.png",
+    "tags": [
+      "暗色"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "ant-design",
+    "name": "Ant Design",
+    "org": "蚂蚁集团",
+    "tagline": "东方克制的企业级蓝图",
+    "desc": "白底蓝调的经典企业风，PingFang SC 中文字体精心编排，8px 栅格体系，蓝/青/橙语义色分区。",
+    "accent": "#1677ff",
+    "gradient": "linear-gradient(135deg,#1677ff 0%,#4096ff 100%)",
+    "swatches": [
+      "#1677ff",
+      "#ffffff",
+      "#000000",
+      "#f5f5f5"
+    ],
+    "preview": "./outputs/preview-ant-design.png",
+    "tags": [
+      "极简"
+    ],
+    "category": "科技"
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "org": "Tailwind Labs",
+    "tagline": "工具优先的实用主义",
+    "desc": "深色画布上高对比代码块，青蓝渐变点缀，JetBrains Mono 等宽字体的纯粹，每个 class 都是一块彩色积木。",
+    "accent": "#38BDF8",
+    "gradient": "linear-gradient(135deg,#0B1121 0%,#0F172A 100%)",
+    "swatches": [
+      "#38BDF8",
+      "#0B1121",
+      "#ffffff",
+      "#475569"
+    ],
+    "preview": "./outputs/preview-tailwind.png",
+    "tags": [
+      "科技"
+    ],
+    "category": "科技"
+  }
+]

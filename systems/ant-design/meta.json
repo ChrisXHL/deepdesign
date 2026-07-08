@@ -1,0 +1,29 @@
+{
+  "id": "ant-design",
+  "name": "Ant Design",
+  "org": "蚂蚁集团",
+  "tagline": "东方克制的企业级蓝图",
+  "desc": "白底蓝调的经典企业风，PingFang SC 中文字体精心编排，8px 栅格体系，蓝/青/橙语义色分区，Form 和 Table 组件是灵魂。中文设计系统的标杆。",
+  "accent": "#1677ff",
+  "gradient": "linear-gradient(135deg,#1677ff 0%,#4096ff 100%)",
+  "swatches": [
+    "#1677ff",
+    "#ffffff",
+    "#000000",
+    "#f5f5f5"
+  ],
+  "modules": [
+    "doc",
+    "system",
+    "case",
+    "source",
+    "animation"
+  ],
+  "sourceUrl": "https://ant.design/",
+  "preview": "./outputs/preview-ant-design.png",
+  "tags": [
+    "极简",
+    "科技"
+  ],
+  "category": "科技"
+}
