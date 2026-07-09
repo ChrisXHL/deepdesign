@@ -210,6 +210,18 @@
       letter-spacing:.08em;z-index:3;color:#fff;padding:4px 10px;border-radius:9999px;background:rgba(255,255,255,.15);
       backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.2);text-shadow:0 1px 2px rgba(0,0,0,.2)}
 
+    /* Screenshot-based cover */
+    .sys-card-cover-img-wrap{background:none !important}
+    .sys-card-cover-img-wrap::before{display:none !important}
+    .sys-cover-img{
+      position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+      z-index:0;
+    }
+    .sys-cover-overlay{
+      position:absolute;inset:0;z-index:1;pointer-events:none;
+      background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.6) 100%);
+    }
+
     .sys-card-preview{display:flex;align-items:center;gap:14px;padding:14px 24px;
       border-bottom:1px solid var(--color-border);background:var(--color-surface-warm)}
     .preview-swatches{display:flex;gap:5px}
@@ -1057,6 +1069,7 @@
     }
 
     function renderCard(s){
+      var coverImg = s.preview || '';
       var coverBg = s.gradient || 'linear-gradient(135deg,#000 0%,#333 100%)';
       var coverFont = s.id==='apple' ? "-apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif" : "var(--font-body)";
       var previewFont = s.id==='apple' ? "-apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif" : "Inter,sans-serif";
@@ -1064,13 +1077,26 @@
       var modList = s.modules || ['doc','system','case','source'];
       var accent = s.accent || '#0075de';
       var mods = modList.map(m=>'<a class="mod-link" data-route="/'+s.id+'/'+m+'" href="#/'+s.id+'/'+m+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+MODULE_META[m].icon+'</svg>'+MODULE_META[m].label+'</a>').join('');
-      return '<div class="sys-card" data-route="/'+s.id+'/'+modList[0]+'" role="link" tabindex="0">'+
-        '<div class="sys-card-shine"></div>'+
-        '<div class="sys-card-cover" style="background:'+coverBg+'">'+
+      var coverContent = '';
+      if(coverImg){
+        /* Screenshot-based cover */
+        coverContent =
+          '<img class="sys-cover-img" src="'+coverImg+'" alt="'+s.name+' design system" loading="lazy">'+
+          '<div class="sys-cover-overlay"></div>'+
+          '<span class="sys-card-cover-name" style="font-family:'+coverFont+'">'+s.name+'</span>'+
+          '<span class="sys-card-cover-org">'+(s.org||'')+'</span>';
+      } else {
+        /* Fallback: gradient background */
+        coverContent =
           '<div class="sys-card-cover-accent" style="width:110px;height:110px;background:'+accent+';top:-20px;right:40px"></div>'+
           '<div class="sys-card-cover-accent" style="width:80px;height:80px;background:rgba(255,255,255,.35);bottom:-10px;right:120px"></div>'+
           '<span class="sys-card-cover-name" style="font-family:'+coverFont+'">'+s.name+'</span>'+
-          '<span class="sys-card-cover-org">'+(s.org||'')+'</span>'+
+          '<span class="sys-card-cover-org">'+(s.org||'')+'</span>';
+      }
+      return '<div class="sys-card" data-route="/'+s.id+'/'+modList[0]+'" role="link" tabindex="0">'+
+        '<div class="sys-card-shine"></div>'+
+        '<div class="sys-card-cover"+(coverImg?' sys-card-cover-img-wrap':'')+" style="'+(coverImg?'':('background:'+coverBg))+'">'+
+          coverContent+
         '</div>'+
         '<div class="sys-card-preview">'+
           '<div class="preview-swatches">'+swatches+'</div>'+
