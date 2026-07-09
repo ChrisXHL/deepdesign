@@ -17,7 +17,8 @@
     "system",
     "case",
     "source",
-    "animation"
+    "animation",
+    "voice"
   ],
   "sourceUrl": "https://github.com/",
   "preview": "./outputs/preview-github.png",

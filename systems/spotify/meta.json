@@ -17,7 +17,8 @@
     "system",
     "case",
     "source",
-    "animation"
+    "animation",
+    "voice"
   ],
   "sourceUrl": "https://www.spotify.com/",
   "preview": "./outputs/preview-spotify.png",

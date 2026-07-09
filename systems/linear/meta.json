@@ -17,7 +17,8 @@
     "system",
     "case",
     "source",
-    "animation"
+    "animation",
+    "voice"
   ],
   "sourceUrl": "https://linear.app/",
   "preview": "./outputs/preview-linear.png",

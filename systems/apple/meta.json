@@ -18,7 +18,8 @@
     "system",
     "case",
     "source",
-    "animation"
+    "animation",
+    "voice"
   ],
   "sourceUrl": "https://www.apple.com.cn/",
   "preview": "./outputs/preview-apple.png",

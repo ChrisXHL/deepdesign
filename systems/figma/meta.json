@@ -17,7 +17,8 @@
     "system",
     "case",
     "source",
-    "animation"
+    "animation",
+    "voice"
   ],
   "sourceUrl": "https://www.figma.com/",
   "preview": "./outputs/preview-figma.png",

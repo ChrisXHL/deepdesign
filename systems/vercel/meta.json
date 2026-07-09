@@ -17,7 +17,8 @@
     "system",
     "case",
     "source",
-    "animation"
+    "animation",
+    "voice"
   ],
   "sourceUrl": "https://vercel.com/",
   "preview": "./outputs/preview-vercel.png",

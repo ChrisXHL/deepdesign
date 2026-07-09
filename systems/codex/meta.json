@@ -18,7 +18,8 @@
     "system",
     "case",
     "source",
-    "animation"
+    "animation",
+    "voice"
   ],
   "sourceUrl": "https://chatgpt.com/zh-Hans-CN/codex/",
   "preview": "./outputs/preview-codex.png",
