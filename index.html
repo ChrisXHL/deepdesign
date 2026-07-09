@@ -931,6 +931,11 @@
 
   <script>
     /* ===== Data: lazy-load design systems from external files ===== */
+    /* Cache-busting: bump APP_VERSION on every deploy so visitors always
+       fetch the latest manifest/meta/design/voice instead of a stale
+       GitHub Pages / browser copy. Format: YYYY-MM-DD.N */
+    const APP_VERSION = '2026-07-09.1';
+    const withV = (url) => url + (url.includes('?') ? '&' : '?') + 'v=' + APP_VERSION;
     let systemManifest = [];        /* loaded from systems/manifest.json */
     let systemCache  = {};          /* in-memory cache: {id: {meta, designMd}} */
     let dataReady     = false;
@@ -938,7 +943,7 @@
     async function loadManifest(){
       if(dataReady) return systemManifest;
       try {
-        const r = await fetch('systems/manifest.json');
+        const r = await fetch(withV('systems/manifest.json'));
         if(!r.ok) throw new Error('manifest not found');
         systemManifest = await r.json();
         dataReady = true;
@@ -951,9 +956,9 @@
     async function loadSystem(id){
       if(systemCache[id]) return systemCache[id];
       const [metaR, mdR, voiceR] = await Promise.all([
-        fetch(`systems/${id}/meta.json`),
-        fetch(`systems/${id}/design.md`),
-        fetch(`systems/${id}/voice.md`).catch(()=>({ok:false}))
+        fetch(withV(`systems/${id}/meta.json`)),
+        fetch(withV(`systems/${id}/design.md`)),
+        fetch(withV(`systems/${id}/voice.md`)).catch(()=>({ok:false}))
       ]);
       const meta = metaR.ok ? await metaR.json() : {};
       const designMd = mdR.ok ? await mdR.text() : '';
