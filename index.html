@@ -1110,10 +1110,9 @@
           '<span class="sys-cover-glass-org">'+(s.org||'')+'</span>'+
         '</div>';
       if(coverImg){
-        /* Blurred screenshot + accent tint + frosted glass */
+        /* Blurred screenshot + frosted glass */
         coverContent =
           '<img class="sys-cover-img" src="'+coverImg+'" alt="" loading="lazy">'+
-          '<div class="sys-cover-overlay" style="background:'+accent+'"></div>'+
           glassPanel;
       } else {
         /* Fallback: gradient + accent blobs + glass panel */
