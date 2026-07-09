@@ -323,47 +323,190 @@
     .module-tab.active{color:var(--color-primary);border-bottom-color:var(--color-primary)}
     .module-tab svg{width:16px;height:16px}
 
-    /* ===== Animation Module ===== */
-    .anim-hero{text-align:center;padding:40px 24px 32px;background:var(--color-surface-warm);border-radius:var(--radius-md);border:1px solid var(--color-border);margin-bottom:24px}
-    .anim-icon-wrap{width:56px;height:56px;border-radius:50%;background:rgba(118,74,188,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
-    .anim-icon-wrap svg{width:28px;height:28px;color:#764abc}
-    .anim-hero h2{font-size:22px;font-weight:700;letter-spacing:-.01em;margin:0 0 6px}
-    .anim-hero p{font-size:14px;color:var(--color-text-secondary);margin:0;max-width:380px;margin:0 auto;line-height:1.55}
+    /* ===== Animation Module — Notion-style redesign ===== */
 
-    .anim-main-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-    .anim-main-header{padding:24px 28px;background:linear-gradient(135deg,rgba(118,74,188,.04) 0%,rgba(118,74,188,.01) 100%);border-bottom:1px solid var(--color-border);display:flex;align-items:flex-start;gap:16px}
-    .anim-gsap-logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#764abc,#0dae42);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(118,74,188,.25)}
-    .anim-gsap-logo svg{width:22px;height:22px;color:#fff}
-    .anim-main-header-text{flex:1}
-    .anim-main-header-text h3{font-size:18px;font-weight:700;margin:0 0 4px;letter-spacing:-.01em}
-    .anim-main-header-text p{font-size:13px;color:var(--color-text-secondary);margin:0;line-height:1.5}
-    .anim-main-body{padding:24px 28px}
-    .anim-install-section{margin-bottom:20px}
-    .anim-install-label{font-size:12px;font-weight:600;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
-    .anim-install-row{display:flex;align-items:stretch;gap:0;border:1px solid var(--color-border);border-radius:var(--radius-sm);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-    .anim-install-cmd{flex:1;display:flex;align-items:center;padding:12px 16px;background:var(--color-canvas);font-family:var(--font-mono);font-size:13px;color:var(--color-text-primary);line-height:1.5;word-break:break-all;min-width:0}
-    .anim-install-cmd code{font-family:var(--font-mono)}
-    .anim-copy-btn{display:inline-flex;align-items:center;gap:6px;padding:0 20px;font-size:13px;font-weight:600;border:none;background:linear-gradient(135deg,#764abc,#5a2d9e);color:#fff;cursor:pointer;transition:all .2s ease;font-family:var(--font-body);flex-shrink:0;border-radius:0;white-space:nowrap}
-    .anim-copy-btn:hover{background:linear-gradient(135deg,#8754cf,#6b38b5);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+    /* Hero section: warm background, centered */
+    .anim-hero{
+      text-align:center;
+      padding:52px 28px 42px;
+      background:#faf9f7;
+      border:1px solid #e8e5df;
+      border-radius:14px;
+      margin-bottom:20px;
+    }
+    [data-theme="dark"] .anim-hero{background:rgba(255,255,255,.03);border-color:rgba(255,255,255,.08)}
+    .anim-hero-icon{
+      width:60px;height:60px;
+      border-radius:50%;
+      background:rgba(124,77,194,.08);
+      display:inline-flex;align-items:center;justify-content:center;
+      margin:0 auto 18px;
+    }
+    .anim-hero-icon svg{width:30px;height:30px;color:#7c4dc2}
+    [data-theme="dark"] .anim-hero-icon svg{color:#a78bfa}
+    .anim-hero-title{
+      font-size:23px;font-weight:700;letter-spacing:-.02em;margin:0 0 8px;
+      color:var(--color-text-primary);
+    }
+    .anim-hero-sub{
+      font-size:14.5px;color:var(--color-text-secondary);margin:0;
+      max-width:420px;margin:0 auto;line-height:1.58;
+    }
+
+    /* Main card: white surface, clean border */
+    .anim-card{
+      background:var(--color-surface);
+      border:1px solid var(--color-border);
+      border-radius:14px;
+      overflow:hidden;
+      margin-bottom:20px;
+      box-shadow:0 1px 3px rgba(0,0,0,.04);
+    }
+
+    /* Card header: brand logo + title + description */
+    .anim-card-header{
+      padding:26px 28px 22px;
+      border-bottom:1px solid var(--color-border);
+    }
+    .anim-brand{display:flex;align-items:flex-start;gap:16px}
+    .anim-brand-icon{
+      width:48px;height:48px;
+      border-radius:12px;
+      background:linear-gradient(145deg,#764abc,#0dae42);
+      display:flex;align-items:center;justify-content:center;
+      flex-shrink:0;
+      box-shadow:0 4px 16px rgba(118,74,188,.25);
+    }
+    .anim-brand-icon svg{width:24px;height:24px;color:#fff}
+    .anim-brand-info{flex:1;min-width:0}
+    .anim-brand-title{
+      font-size:17.5px;font-weight:700;letter-spacing:-.02em;margin:0 0 5px;
+      color:var(--color-text-primary);
+    }
+    .anim-brand-desc{
+      font-size:13px;color:var(--color-text-secondary);margin:0;line-height:1.55;
+    }
+
+    /* Three-column feature cards */
+    .anim-features{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:0;
+      padding:0;
+    }
+    @media(max-width:720px){.anim-features{grid-template-columns:1fr}}
+    .anim-feature{
+      padding:26px 20px;
+      text-align:center;
+      border-right:1px solid var(--color-border);
+      transition:background .15s ease;
+    }
+    .anim-feature:last-child{border-right:none}
+    @media(max-width:720px){.anim-feature{border-right:none;border-bottom:1px solid var(--color-border)}.anim-feature:last-child{border-bottom:none}}
+    .anim-feature:hover{background:rgba(0,0,0,.015)}
+    [data-theme="dark"] .anim-feature:hover{background:rgba(255,255,255,.03)}
+    .anim-feature-icon{
+      width:40px;height:40px;
+      margin:0 auto 12px;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .anim-feature-icon svg{width:24px;height:24px;color:var(--color-text-secondary)}
+    .anim-feature-title{
+      font-size:14.5px;font-weight:600;margin:0 0 5px;
+      color:var(--color-text-primary);
+    }
+    .anim-feature-desc{
+      font-size:12.5px;color:var(--color-text-secondary);margin:0 0 8px;line-height:1.48;
+    }
+    .anim-feature-link{
+      display:inline-block;
+      font-size:13px;font-weight:500;
+      color:var(--color-primary);
+      text-decoration:none;
+      transition:opacity .15s;
+    }
+    .anim-feature-link:hover{opacity:.75;text-decoration:underline}
+
+    /* Install command bar */
+    .anim-install{
+      padding:22px 28px 26px;
+      border-top:1px solid var(--color-border);
+    }
+    .anim-install-hint{
+      font-size:12.5px;color:var(--color-text-muted);margin:0 0 12px;
+      letter-spacing:.01em;
+    }
+    .anim-install-bar{
+      display:flex;align-items:stretch;
+      border:1px solid var(--color-border);
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 1px 3px rgba(0,0,0,.04);
+    }
+    .anim-install-code{
+      flex:1;display:flex;align-items:center;
+      padding:13px 18px;
+      background:var(--color-canvas);
+      font-family:var(--font-mono);
+      font-size:13px;
+      color:var(--color-text-primary);
+      line-height:1.55;
+      word-break:break-all;
+      min-width:0;
+      border:none;
+    }
+    .anim-copy-btn{
+      display:inline-flex;align-items:center;gap:7px;
+      padding:0 22px;
+      font-size:13px;font-weight:600;
+      border:none;
+      background:linear-gradient(145deg,#764abc,#5a2d9e);
+      color:#fff;
+      cursor:pointer;
+      transition:all .2s ease;
+      font-family:var(--font-body);
+      flex-shrink:0;
+      white-space:nowrap;
+      border-radius:0;
+    }
+    .anim-copy-btn:hover{background:linear-gradient(145deg,#8754cf,#6b38b5);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
     .anim-copy-btn svg{width:15px;height:15px;flex-shrink:0}
-    .anim-copy-btn.copied{background:linear-gradient(135deg,#0dae42,#098a34)}
-    .anim-info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
-    @media(max-width:640px){.anim-info-grid{grid-template-columns:1fr}}
-    .anim-info-card{padding:20px;border:1px solid var(--color-border);border-radius:var(--radius-sm);background:var(--color-surface);text-align:center}
-    .anim-info-card svg{width:24px;height:24px;margin-bottom:10px;color:var(--color-text-secondary)}
-    .anim-info-card h4{font-size:14px;font-weight:600;margin:0 0 4px}
-    .anim-info-card p{font-size:12px;color:var(--color-text-secondary);margin:0 0 8px;line-height:1.45}
-    .anim-info-card a{font-size:13px;font-weight:500;color:var(--color-primary);text-decoration:none}
-    .anim-info-card a:hover{text-decoration:underline}
-    .anim-example{border:1px solid var(--color-border);border-radius:var(--radius-md);padding:24px;background:var(--color-surface)}
-    .anim-example h4{font-size:15px;font-weight:600;margin:0 0 16px;letter-spacing:-.01em}
-    .anim-example-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-    @media(max-width:640px){.anim-example-grid{grid-template-columns:repeat(2,1fr)}}
-    .anim-example-item{display:flex;flex-direction:column;align-items:center;gap:4px;padding:16px 8px;border-radius:var(--radius-sm);background:var(--color-canvas);text-align:center;transition:background .15s}
-    .anim-example-item:hover{background:var(--color-surface-warm)}
-    .anim-example-icon{font-size:22px;line-height:1;margin-bottom:2px}
-    .anim-example-name{font-size:13px;font-weight:600;color:var(--color-text-primary)}
-    .anim-example-desc{font-size:11px;color:var(--color-text-muted)}
+    .anim-copy-btn.copied{background:linear-gradient(145deg,#0dae42,#098a34)}
+
+    /* Preview grid */
+    .anim-preview{
+      border:1px solid var(--color-border);
+      border-radius:14px;
+      padding:26px 28px;
+      background:var(--color-surface);
+    }
+    .anim-preview-label{
+      font-size:15px;font-weight:600;margin:0 0 18px;letter-spacing:-.01em;
+      color:var(--color-text-primary);
+    }
+    .anim-preview-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+    }
+    @media(max-width:640px){.anim-preview-grid{grid-template-columns:repeat(2,1fr)}}
+    .anim-preview-item{
+      display:flex;flex-direction:column;align-items:center;gap:5px;
+      padding:18px 10px;
+      border-radius:10px;
+      background:var(--color-canvas);
+      text-align:center;
+      transition:background .15s ease,transform .2s ease;
+      border:1px solid transparent;
+    }
+    .anim-preview-item:hover{
+      background:var(--color-surface-warm);
+      transform:translateY(-2px);
+      border-color:var(--color-border);
+    }
+    .anim-preview-icon{font-size:24px;line-height:1}
+    .anim-preview-name{font-size:13px;font-weight:600;color:var(--color-text-primary)}
+    .anim-preview-tag{font-size:11px;color:var(--color-text-muted)}
 
     /* ===== Doc module ===== */
     .doc-toolbar{display:flex;align-items:center;gap:12px;margin-bottom:16px}
@@ -2288,69 +2431,81 @@
     /* ===== Module 5: Animation (GSAP skill) ===== */
     function buildAnimationModule(sys){
       return `<div class="animation-guide">
-        <div class="anim-hero">
-          <div class="anim-icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <!-- Hero: 暖色背景 + 居中标题 -->
+        <section class="anim-hero">
+          <div class="anim-hero-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           </div>
-          <h2>为 ${sys.name} 赋予动效</h2>
-          <p>安装 GSAP Skill，让 Agent 基于设计令牌自动生成匹配的动效代码</p>
-        </div>
+          <h2 class="anim-hero-title">为 ${sys.name} 赋予动效</h2>
+          <p class="anim-hero-sub">安装 GSAP Skill，让 Agent 基于设计令牌自动生成匹配的动效代码</p>
+        </section>
 
-        <div class="anim-main-card">
-          <div class="anim-main-header">
-            <div class="anim-gsap-logo">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <div class="anim-main-header-text">
-              <h3>GSAP — GreenSock Animation Platform</h3>
-              <p>业界最强大的 Web 动效库 · 已预置 Core / ScrollTrigger / Timeline / React / Plugins / Performance 六大专项 Skill</p>
-            </div>
-          </div>
-          <div class="anim-main-body">
-            <div class="anim-info-grid">
-              <div class="anim-info-card">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                <h4>官方文档</h4>
-                <p>完整 API 参考与教程</p>
-                <a href="https://gsap.com/docs/v3/" target="_blank" rel="noopener">gsap.com →</a>
+        <!-- 主卡片：GSAP 信息 + 三列特性 + 安装命令 -->
+        <section class="anim-card">
+          <!-- 卡片头部：Logo + 标题 + 描述 -->
+          <header class="anim-card-header">
+            <div class="anim-brand">
+              <div class="anim-brand-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
               </div>
-              <div class="anim-info-card">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-                <h4>高性能</h4>
-                <p>60fps 流畅动画，自动 GPU 加速</p>
-                <span></span>
+              <div class="anim-brand-info">
+                <h3 class="anim-brand-title">GSAP — GreenSock Animation Platform</h3>
+                <p class="anim-brand-desc">业界最强大的 Web 动效库 · 已预置 Core / ScrollTrigger / Timeline / React / Plugins / Performance 六大专项 Skill</p>
               </div>
-              <div class="anim-info-card">
+            </div>
+          </header>
+
+          <!-- 三列信息卡 -->
+          <div class="anim-features">
+            <article class="anim-feature">
+              <div class="anim-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <h4 class="anim-feature-title">官方文档</h4>
+              <p class="anim-feature-desc">完整 API 参考与教程</p>
+              <a class="anim-feature-link" href="https://gsap.com/docs/v3/" target="_blank" rel="noopener">gsap.com →</a>
+            </article>
+            <article class="anim-feature">
+              <div class="anim-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h4 class="anim-feature-title">高性能</h4>
+              <p class="anim-feature-desc">60fps 流畅动画，自动 GPU 加速</p>
+            </article>
+            <article class="anim-feature">
+              <div class="anim-feature-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                <h4>安装即用</h4>
-                <p>Agent 自动调用匹配的 Skill 生成动效</p>
-                <span></span>
               </div>
-            </div>
-            <div class="anim-install-section">
-              <div class="anim-install-label">复制指令发送给 Agent 即可安装</div>
-              <div class="anim-install-row">
-                <div class="anim-install-cmd"><code>安装这个 skill：https://github.com/greensock/gsap-skills</code></div>
-                <button class="anim-copy-btn" id="animCopyBtn">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                  复 制
-                </button>
-              </div>
-            </div>
+              <h4 class="anim-feature-title">安装即用</h4>
+              <p class="anim-feature-desc">Agent 自动调用匹配的 Skill 生成动效</p>
+            </article>
           </div>
-        </div>
 
-        <div class="anim-example">
-          <h4>安装后可实现效果</h4>
-          <div class="anim-example-grid">
-            <div class="anim-example-item"><span class="anim-example-icon">↕</span><span class="anim-example-name">卡片入场</span><span class="anim-example-desc">stagger 错落</span></div>
-            <div class="anim-example-item"><span class="anim-example-icon">↔</span><span class="anim-example-name">滚动视差</span><span class="anim-example-desc">ScrollTrigger</span></div>
-            <div class="anim-example-item"><span class="anim-example-icon">↻</span><span class="anim-example-name">3D 悬浮</span><span class="anim-example-desc">magnetic 效果</span></div>
-            <div class="anim-example-item"><span class="anim-example-icon">⌘</span><span class="anim-example-name">时间轴</span><span class="anim-example-desc">Timeline 编排</span></div>
-            <div class="anim-example-item"><span class="anim-example-icon">⇲</span><span class="anim-example-name">页面过渡</span><span class="anim-example-desc">路由切换</span></div>
-            <div class="anim-example-item"><span class="anim-example-icon">⊙</span><span class="anim-example-name">全局鼠标</span><span class="anim-example-desc">光标追随</span></div>
+          <!-- 安装命令区 -->
+          <footer class="anim-install">
+            <p class="anim-install-hint">复制指令发送给 Agent 即可安装</p>
+            <div class="anim-install-bar">
+              <code class="anim-install-code">安装这个 skill：https://github.com/greensock/gsap-skills</code>
+              <button class="anim-copy-btn" id="animCopyBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                复制
+              </button>
+            </div>
+          </footer>
+        </section>
+
+        <!-- 效果预览网格 -->
+        <section class="anim-preview">
+          <h4 class="anim-preview-label">安装后可实现效果</h4>
+          <div class="anim-preview-grid">
+            <div class="anim-preview-item"><span class="anim-preview-icon">↕</span><span class="anim-preview-name">卡片入场</span><span class="anim-preview-tag">stagger 错落</span></div>
+            <div class="anim-preview-item"><span class="anim-preview-icon">↔</span><span class="anim-preview-name">滚动视差</span><span class="anim-preview-tag">ScrollTrigger</span></div>
+            <div class="anim-preview-item"><span class="anim-preview-icon">↻</span><span class="anim-preview-name">3D 悬浮</span><span class="anim-preview-tag">magnetic 效果</span></div>
+            <div class="anim-preview-item"><span class="anim-preview-icon">⌘</span><span class="anim-preview-name">时间轴</span><span class="anim-preview-tag">Timeline 编排</span></div>
+            <div class="anim-preview-item"><span class="anim-preview-icon">⇲</span><span class="anim-preview-name">页面过渡</span><span class="anim-preview-tag">路由切换</span></div>
+            <div class="anim-preview-item"><span class="anim-preview-icon">⊙</span><span class="anim-preview-name">全局鼠标</span><span class="anim-preview-tag">光标追随</span></div>
           </div>
-        </div>
+        </section>
       </div>`;
     }
 
